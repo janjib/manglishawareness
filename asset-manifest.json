@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/manglishawareness/static/css/main.16c03ea8.chunk.css",
+    "main.js": "/manglishawareness/static/js/main.b9eea64d.chunk.js",
+    "main.js.map": "/manglishawareness/static/js/main.b9eea64d.chunk.js.map",
+    "runtime-main.js": "/manglishawareness/static/js/runtime-main.c061444c.js",
+    "runtime-main.js.map": "/manglishawareness/static/js/runtime-main.c061444c.js.map",
+    "static/css/2.d0c5fa92.chunk.css": "/manglishawareness/static/css/2.d0c5fa92.chunk.css",
+    "static/js/2.c699652e.chunk.js": "/manglishawareness/static/js/2.c699652e.chunk.js",
+    "static/js/2.c699652e.chunk.js.map": "/manglishawareness/static/js/2.c699652e.chunk.js.map",
+    "index.html": "/manglishawareness/index.html",
+    "static/css/2.d0c5fa92.chunk.css.map": "/manglishawareness/static/css/2.d0c5fa92.chunk.css.map",
+    "static/css/main.16c03ea8.chunk.css.map": "/manglishawareness/static/css/main.16c03ea8.chunk.css.map",
+    "static/js/2.c699652e.chunk.js.LICENSE.txt": "/manglishawareness/static/js/2.c699652e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c061444c.js",
+    "static/css/2.d0c5fa92.chunk.css",
+    "static/js/2.c699652e.chunk.js",
+    "static/css/main.16c03ea8.chunk.css",
+    "static/js/main.b9eea64d.chunk.js"
+  ]
+}

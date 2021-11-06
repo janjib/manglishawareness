@@ -9,7 +9,7 @@ body {
   background-color: #f6e2d2;
 }
 .homepage-container {
-  min-height: 550px;
+  min-height: 650px;
 }
 .main-title {
   color: #c66344;
@@ -80,5 +80,42 @@ body {
   height: 70px;
   border: none;
   border-radius: 15px;
-  background-color: #f6e2d2;
+  background-color: #fff6ee;
+}
+.content1 {
+  min-height: 650px;
+  background-color: #c66344;
+}
+.content1-title {
+  font-size: 4rem;
+  color: #f6e2d2;
+}
+.content1-info {
+  color: #f6e2d2;
+}
+.content2 {
+  min-height: 650px;
+}
+.content3 {
+  background-color: #c66344;
+  min-height: 650px;
+}
+.content3-title {
+  color: #f6e2d2;
+}
+.content3-info {
+  color: #f6e2d2;
+}
+.back-button {
+  position: absolute;
+  list-style-type: none;
+  border: none;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  padding: 6px;
+  margin: 10px 0 10px 0;
+}
+.container2 {
+  position: relative;
 }

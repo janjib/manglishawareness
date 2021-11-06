@@ -8,22 +8,6 @@ const Homepage = () => {
   let history = useHistory();
   const [visitors, setVisitors] = useState(0);
 
-  const getVisitorsData = async () => {
-    try {
-      const resp = await axios.get(
-        `https://api.countapi.xyz/hit/manglishawareness`
-      );
-      setVisitors(resp.data.value);
-    } catch (err) {
-      // Handle Error Here
-      console.error(err, "There is an error !");
-    }
-  };
-
-  useEffect(() => {
-    getVisitorsData();
-  }, []);
-
   //https://api.countapi.xyz/hit/manglishawareness/visits
   //{"namespace":"manglishwareness","key":"0206a3ca-4feb-48d8-9251-81e05997f98e","value":0}
   //https://api.countapi.xyz/hit/manglishawareness/enable_reset
@@ -59,7 +43,43 @@ const Homepage = () => {
         </button>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="content1 d-flex flex-column justify-content-center align-items-center my-5">
+        <h1 className="text-center content1-title mb-5">
+          {" "}
+          What is Manglish ?{" "}
+        </h1>
+        <h4 className="text-center content1-info">
+          {" "}
+          An informal form of Malaysia English with features of an English-based
+          creole principally in Malaysia
+        </h4>
+      </div>
+
+      <div className="p-2 content2 d-flex justify-content-center space-around align-items-center my-5 flex-column">
+        <h1 className="text-center content2-title mb-5">
+          {" "}
+          So, What is Manglish Awareness?{" "}
+        </h1>
+        <h4 className="text-center content2-info">
+          {" "}
+          An awareness to prevent people from judging the way others talk.
+        </h4>
+      </div>
+
+      <div className="content3 d-flex flex-column justify-content-center  align-items-center my-5">
+        <h1 className="text-center content3-title mb-5"> Want to help us? </h1>
+        <h4 className="text-center content3-info">
+          {" "}
+          <a
+            target="blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeF329zSXc2X3a_SoDAhmkt5jrcIoHi69rXFgVJTdd-i87q7A/viewform?usp=sf_link"
+          >
+            <button className="share-button-1">Fill this survey</button>
+          </a>
+        </h4>
+      </div>
+
+      <div className="d-flex justify-content-center align-items-center my-5">
         <a
           href="https://www.instagram.com/manglishawareness/"
           target="_blank"
@@ -72,10 +92,6 @@ const Homepage = () => {
           {" "}
           <i className="fab fa-github mx-2"></i>{" "}
         </a>
-      </div>
-      <div className="d-flex flex-column justify-content-center align-items-center my-5">
-        <h1>{visitors && visitors}</h1>
-        <p>Visitors</p>
       </div>
     </Container>
   );

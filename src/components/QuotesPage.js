@@ -4,8 +4,10 @@ import { timeStamp } from "../config";
 import GetData from "../hooks/getData";
 import { sendData } from "../hooks/sendData";
 import "animate.css";
+import { useHistory } from "react-router";
 
 const QuotesPage = () => {
+  let history = useHistory();
   const { docs } = GetData("quotes");
   const [name, setName] = useState("");
   const [text, setText] = useState("");
@@ -36,10 +38,16 @@ const QuotesPage = () => {
     setInputBox(!inputBox);
   };
   return (
-    <Container fluid>
+    <Container fluid className="container2">
       <div className="quote-container d-flex flex-column align-items-center">
-        <div onClick={showInputBox} className="toggle-box my-3">
-          <i className="fas fa-pencil-alt"></i>
+        <div onClick={showInputBox} className="toggle-box my-5 d-flex p-3">
+          {/* <h4>Write a story/comment</h4> */}
+          <i className="fas fa-pencil-alt mx-4"></i>
+          {!inputBox ? (
+            <i class="fas fa-sort-down"></i>
+          ) : (
+            <i class="fas fa-sort-up"></i>
+          )}
         </div>
         {inputBox && (
           <div className="input-box d-flex flex-column my-5 align-items-center">
@@ -50,7 +58,7 @@ const QuotesPage = () => {
               onChange={handleChangeName}
             />
             <textarea
-              placeholder="Write your thoughts on manglish awareness"
+              placeholder="Write your thoughts on manglish awareness or your motivational words for those who are currently improving their English"
               className="text-area my-2"
               value={text}
               onChange={handleChangeText}
@@ -102,6 +110,13 @@ const QuotesPage = () => {
           </div>
         ))}
       </div>
+      <button
+        className="back-button"
+        onClick={() => history.push("/manglishawareness")}
+      >
+        <i className="fas fa-chevron-left"></i>
+        <h5>Back</h5>
+      </button>
     </Container>
   );
 };
